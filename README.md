@@ -51,6 +51,8 @@ cp .env.sample .env
 python main.py
 ```
 
+* You can also create a repl and import the repo and run it easily over there.
+
 # License
 
 * MIT License
