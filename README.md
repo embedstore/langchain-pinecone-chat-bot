@@ -4,7 +4,7 @@ This repo is a fully functional Flask app that can be used to create a chatbot a
 
 It uses the following
 
-* Ready made embeddings from [embeddingtown.com](https://embeddingtown.com). These text is chunked using LangChain's RecursiveCharacterTextSplitter with chunk_size as 1000, chunk_overlap as 100 and length_function as len. OpenAI embeddings (dimension 1536) are then used to calculate embeddings for each chunk.
+* Ready made embeddings from [embeddingtown.com](https://embeddingtown.com) ([python package](https://github.com/taranjeet/pyembeddingtown)). These text is chunked using LangChain's RecursiveCharacterTextSplitter with chunk_size as 1000, chunk_overlap as 100 and length_function as len. OpenAI embeddings (dimension 1536) are then used to calculate embeddings for each chunk.
 * It loads the embeddings and then indexes them into a Pinecone index.
 * Now whenever a user query is received, it first creates embedding for it using OpenAI embeddings. Then it search for the nearest 3 neighbour using cosine similarity in Pinecone index.
 * Now these documents are passed as context to ChatGPT API with the below prompt and temperature as 0 and max_tokens as 800
