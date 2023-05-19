@@ -1,0 +1,6 @@
+flask
+python-dotenv
+openai
+pinecone-client
+langchain
+git+https://github.com/taranjeet/pyembeddingtown.git
