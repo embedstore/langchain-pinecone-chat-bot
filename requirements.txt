@@ -3,4 +3,4 @@ python-dotenv
 openai
 pinecone-client
 langchain
-git+https://github.com/taranjeet/pyembeddingtown.git
+git+https://github.com/embedstore/embedstore.git

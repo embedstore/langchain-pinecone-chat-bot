@@ -5,7 +5,7 @@ import itertools
 
 from dotenv import load_dotenv
 from flask import Flask, request, render_template, redirect, url_for, session
-from pyembeddingtown import load_embedding
+from embedstore import load_embedding
 
 load_dotenv()
 
